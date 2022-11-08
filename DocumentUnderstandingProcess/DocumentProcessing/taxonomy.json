@@ -914,6 +914,696 @@
           ]
         }
       ]
+    },
+    {
+      "DocumentTypeId": "Finance.Incoming.Invoices",
+      "Group": "Finance",
+      "Category": "Incoming",
+      "Name": "Invoices",
+      "OptionalUniqueIdentifier": null,
+      "TypeField": {
+        "FieldId": "Finance.Incoming.Invoices.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Finance.Incoming.Invoices.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.Invoices.InvoiceDate",
+          "FieldName": "Invoice Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.Invoices.VendorAddress",
+          "FieldName": "Vendor Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.Invoices.TotalAmount",
+          "FieldName": "Total Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.Invoices.LineItems",
+          "FieldName": "Line Items",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "Finance.Incoming.Invoices.LineItems.Description",
+              "FieldName": "Description",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            },
+            {
+              "FieldId": "Finance.Incoming.Invoices.LineItems.Quantity",
+              "FieldName": "Quantity",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            },
+            {
+              "FieldId": "Finance.Incoming.Invoices.LineItems.UnitPrice",
+              "FieldName": "Unit Price",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            },
+            {
+              "FieldId": "Finance.Incoming.Invoices.LineItems.LinePrice",
+              "FieldName": "Line Price",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            }
+          ],
+          "SetValues": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Finance.Incoming.Form10-K",
+      "Group": "Finance",
+      "Category": "Incoming",
+      "Name": "Form 10-K",
+      "OptionalUniqueIdentifier": null,
+      "TypeField": {
+        "FieldId": "Finance.Incoming.Form10-K.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Finance.Incoming.Form10-K.CompanyName",
+          "FieldName": "Company Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.Form10-K.BLSheet",
+          "FieldName": "BL Sheet",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "Finance.Incoming.Form10-K.BLSheet.BalanceSheetItem",
+              "FieldName": "Balance Sheet Item",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            },
+            {
+              "FieldId": "Finance.Incoming.Form10-K.BLSheet.CurrentYear",
+              "FieldName": "Current Year",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            },
+            {
+              "FieldId": "Finance.Incoming.Form10-K.BLSheet.PreviousYear",
+              "FieldName": "Previous Year",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            }
+          ],
+          "SetValues": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Finance.Incoming.Form4",
+      "Group": "Finance",
+      "Category": "Incoming",
+      "Name": "Form 4",
+      "OptionalUniqueIdentifier": null,
+      "TypeField": {
+        "FieldId": "Finance.Incoming.Form4.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Finance.Incoming.Form4.ReportingPersonName",
+          "FieldName": "Reporting Person Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.Form4.ReportingPersonAddress",
+          "FieldName": "Reporting Person Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.Form4.IssuerName",
+          "FieldName": "Issuer Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.Form4.DateofEarliestTransaction",
+          "FieldName": "Date of Earliest Transaction",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.Form4.AmendmentDate",
+          "FieldName": "Amendment Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.Form4.Relationship",
+          "FieldName": "Relationship",
+          "IsMultiValue": true,
+          "Type": "Set",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [
+            "Director",
+            "Officer",
+            "10% Owner",
+            "Other"
+          ]
+        },
+        {
+          "FieldId": "Finance.Incoming.Form4.NonDerivativeSecurities",
+          "FieldName": "ND Securities",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "Finance.Incoming.Form4.NonDerivativeSecurities.Title",
+              "FieldName": "Title",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            },
+            {
+              "FieldId": "Finance.Incoming.Form4.NonDerivativeSecurities.TransactionDate",
+              "FieldName": "Transaction Date",
+              "IsMultiValue": false,
+              "Type": "Date",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            },
+            {
+              "FieldId": "Finance.Incoming.Form4.NonDerivativeSecurities.DeemedExecutionDate",
+              "FieldName": "Deemed Execution Date",
+              "IsMultiValue": false,
+              "Type": "Date",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            },
+            {
+              "FieldId": "Finance.Incoming.Form4.NonDerivativeSecurities.TransactionCode",
+              "FieldName": "Transaction Code",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            },
+            {
+              "FieldId": "Finance.Incoming.Form4.NonDerivativeSecurities.SecurityAmount",
+              "FieldName": "Security Amount",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            },
+            {
+              "FieldId": "Finance.Incoming.Form4.NonDerivativeSecurities.AcquiredorDisposed",
+              "FieldName": "Acquired or Disposed",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            },
+            {
+              "FieldId": "Finance.Incoming.Form4.NonDerivativeSecurities.SecurityPrice",
+              "FieldName": "Security Price",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            },
+            {
+              "FieldId": "Finance.Incoming.Form4.NonDerivativeSecurities.BeneficiallyOwned",
+              "FieldName": "Beneficially Owned",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            },
+            {
+              "FieldId": "Finance.Incoming.Form4.NonDerivativeSecurities.Ownership",
+              "FieldName": "Ownership",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            },
+            {
+              "FieldId": "Finance.Incoming.Form4.NonDerivativeSecurities.NatureofOwnership",
+              "FieldName": "Nature of Ownership",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            }
+          ],
+          "SetValues": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Finance.Incoming.AccountCreationForm",
+      "Group": "Finance",
+      "Category": "Incoming",
+      "Name": "Account Creation Form",
+      "OptionalUniqueIdentifier": null,
+      "TypeField": {
+        "FieldId": "Finance.Incoming.AccountCreationForm.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Finance.Incoming.AccountCreationForm.ApplicationType",
+          "FieldName": "Application Type",
+          "IsMultiValue": false,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.AccountCreationForm.ApplicationDate",
+          "FieldName": "Application Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.AccountCreationForm.CIFNumber",
+          "FieldName": "CIF Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.AccountCreationForm.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.AccountCreationForm.NameoftheEntity",
+          "FieldName": "Name of the Entity",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.AccountCreationForm.PlaceofIncorporation",
+          "FieldName": "Place of Incorporation",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.AccountCreationForm.CustomerAddress",
+          "FieldName": "Customer Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Finance.Incoming.PurchaseOrder",
+      "Group": "Finance",
+      "Category": "Incoming",
+      "Name": "Purchase Order",
+      "OptionalUniqueIdentifier": null,
+      "TypeField": {
+        "FieldId": "Finance.Incoming.PurchaseOrder.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Finance.Incoming.PurchaseOrder.PONumber",
+          "FieldName": "PO Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.PurchaseOrder.PODate",
+          "FieldName": "PO Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.PurchaseOrder.ClientName",
+          "FieldName": "Client Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.PurchaseOrder.ClientAddress",
+          "FieldName": "Client Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.PurchaseOrder.VendorName",
+          "FieldName": "Vendor Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.PurchaseOrder.VendorAddress",
+          "FieldName": "Vendor Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.PurchaseOrder.ShippingName",
+          "FieldName": "Shipping Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.PurchaseOrder.DeliveryDate",
+          "FieldName": "Delivery Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.PurchaseOrder.POItems",
+          "FieldName": "PO Items",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "Finance.Incoming.PurchaseOrder.POItems.LineNumber",
+              "FieldName": "Line Number",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            },
+            {
+              "FieldId": "Finance.Incoming.PurchaseOrder.POItems.ItemDescription",
+              "FieldName": "Item Description",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            },
+            {
+              "FieldId": "Finance.Incoming.PurchaseOrder.POItems.Quantity",
+              "FieldName": "Quantity",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            },
+            {
+              "FieldId": "Finance.Incoming.PurchaseOrder.POItems.UnitPrice",
+              "FieldName": "Unit Price",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            },
+            {
+              "FieldId": "Finance.Incoming.PurchaseOrder.POItems.LineAmount",
+              "FieldName": "Line Amount",
+              "IsMultiValue": false,
+              "Type": "Number",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": []
+            }
+          ],
+          "SetValues": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Finance.Incoming.UtlityBills",
+      "Group": "Finance",
+      "Category": "Incoming",
+      "Name": "Utlity Bills",
+      "OptionalUniqueIdentifier": null,
+      "TypeField": {
+        "FieldId": "Finance.Incoming.UtlityBills.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Finance.Incoming.UtlityBills.BillName",
+          "FieldName": "Bill Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.UtlityBills.BillingAddress",
+          "FieldName": "Billing Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.UtlityBills.VendorName",
+          "FieldName": "Vendor Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.UtlityBills.VendorAddress",
+          "FieldName": "Vendor Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.UtlityBills.AccountNumber",
+          "FieldName": "Account Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.UtlityBills.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.UtlityBills.TotalAmount",
+          "FieldName": "Total Amount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.UtlityBills.InvoiceDate",
+          "FieldName": "Invoice Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.UtlityBills.DueDate",
+          "FieldName": "Due Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.UtlityBills.PaymentAddress",
+          "FieldName": "Payment Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.UtlityBills.ServiceFromDate",
+          "FieldName": "Service From Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.UtlityBills.ServiceToDate",
+          "FieldName": "Service To Date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.UtlityBills.PaymentTerms",
+          "FieldName": "Payment Terms",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.UtlityBills.PreviousBalance",
+          "FieldName": "Previous Balance",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        },
+        {
+          "FieldId": "Finance.Incoming.UtlityBills.UtilityBillDocumentType",
+          "FieldName": "Utility Bill Document Type",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": []
+        }
+      ]
     }
   ],
   "Groups": [
@@ -933,6 +1623,12 @@
       "Name": "Structured Documents",
       "Categories": [
         "Lending Forms"
+      ]
+    },
+	{
+      "Name": "Finance",
+      "Categories": [
+        "Incoming"
       ]
     }
   ],
